@@ -39,17 +39,17 @@ scrap();
 setInterval(scrap, 300000);
 
 
-app.get('/data-jmbpmc', function (req, res) {
+app.get('/data-jmbpmc-obc', function (req, res) {
     var dataToSend = {data : data};
     res.send(dataToSend);
 });
 
-app.get('/data-total-km', function (req, res) {
+app.get('/data-total-km-obc', function (req, res) {
     var dataToSend = {total_km : total_km};
     res.send(dataToSend);
 });
 
-app.get('/data-total-participants', function (req, res) {
+app.get('/data-total-participants-obc', function (req, res) {
     var dataToSend = {total_participants : total_participants};
     res.send(dataToSend);
 });
