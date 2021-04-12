@@ -54,18 +54,18 @@
     $(document).ready(function() {
 
 
-        $.ajax({url: "/data-total-km", success: function(result){
+        $.ajax({url: "/data-total-km-obc", success: function(result){
             $("#km").html((Math.round(result.total_km * 100) / 100).toFixed(2));
         }});
 
-        $.ajax({url: "/data-total-participants", success: function(result){
+        $.ajax({url: "/data-total-participants-obc", success: function(result){
             $("#participants").html(result.total_participants);
         }});
 
         var tableData = $('#example').DataTable( {
 
             "ajax": {
-                "url": "/data-jmbpmc"
+                "url": "/data-jmbpmc-obc"
             },
             paging: false,
 
